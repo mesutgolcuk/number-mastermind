@@ -1,0 +1,9 @@
+{
+    "404.description": "Böyle bir sayfa yok:",
+    "404.go-to-menu": "Anasayfaya Dön",
+    "general.error": "HATASI",
+    "general.game": "MASTERMIND SAYI OYUNU",
+    "menu.button.easy": "KOLAY",
+    "menu.button.medium": "ORTA",
+    "menu.button.hard": "ZOR"
+}

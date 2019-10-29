@@ -1,0 +1,9 @@
+{
+    "404.description": "There is no page as:",
+    "404.go-to-menu": "Back to home page",
+    "general.error": "ERROR",
+    "general.game": "NUMBER MASTERMIND GAME",
+    "menu.button.easy": "EASY",
+    "menu.button.medium": "MEDIUM",
+    "menu.button.hard": "HARD"
+}
