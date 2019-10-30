@@ -1,9 +1,18 @@
 {
     "404.description": "There is no page as:",
     "404.go-to-menu": "Back to home page",
+    "game.back": "Back to home page",
+    "game.play-again": "Play again",
+    "game.explanation": "DIFFICULTY: {digit} Digit. Please enter a {digit} digit number",
+    "game.guess": "Your Guess",
+    "game.correct": "Correct Position",
+    "game.false": "False Position",
+    "game.submit": "Guess",
+    "game.success": "Congrulations! You FOUND!!",
+    "game.order": "Turn",
     "general.error": "ERROR",
     "general.game": "NUMBER MASTERMIND GAME",
-    "menu.button.easy": "EASY",
-    "menu.button.medium": "MEDIUM",
-    "menu.button.hard": "HARD"
+    "menu.button.easy": "EASY (3)",
+    "menu.button.medium": "MEDIUM (4)",
+    "menu.button.hard": "HARD (6)"
 }
