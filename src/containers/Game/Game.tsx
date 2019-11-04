@@ -41,13 +41,12 @@ export class Game extends React.Component<IGameProps, IGameState> {
                 <Header/>
                 <h4><FormattedMessage id="game.explanation" values={{digit: this.props.difficulty}}/></h4>
                 {this.isFound ? (<Success reset={this.resetGame} />) : (
-                    <PlayGame value={this.state.inputValue} changed={this.updateNumber} submit={this.submit} />
+                    <PlayGame value={this.state.inputValue} changed={this.updateNumber} submit={this.submit} reset={this.resetGame}/>
                 )}
-                <table>
+                <table className="game-table">
                     <TableHeader/>
                     <TableBody array={this.state.history}/>
                 </table>
-                <style>{"table{border:1px solid black; width:50%; margin-left:25%; margin-top:20px}"}</style>
             </div>
         );
     }

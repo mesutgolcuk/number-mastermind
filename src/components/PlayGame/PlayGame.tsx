@@ -5,16 +5,22 @@ import { FormattedMessage } from 'react-intl';
 interface IPlayGameProps {
     value: string,
     changed: any,
-    submit: any
+    submit: any,
+    reset: any
 }
 
 export default function (props: IPlayGameProps) {
     return (
-        <form onSubmit={props.submit}>
-            <input type="text" value={props.value} onChange={props.changed} />
-            <button type="submit">
-                <FormattedMessage id="game.submit" />
-            </button>
-        </form>
+        <div>
+            <form onSubmit={props.submit}>
+                <input type="text" value={props.value} onChange={props.changed} className="game-input" />
+                <button type="submit" className="submit-button">
+                    <FormattedMessage id="game.submit" />
+                </button>
+                <button onClick={props.reset} className="reset-button">
+                    <FormattedMessage id="game.reset" />
+                </button>
+            </form>
+        </div>
     );
 }

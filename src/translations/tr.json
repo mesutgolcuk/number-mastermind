@@ -10,6 +10,7 @@
     "game.submit": "Tahmin Et",
     "game.success": "Tebrikler! Sayıyı Buldun",
     "game.order": "Tur",
+    "game.reset": "Resetle",
     "general.error": "HATASI",
     "general.game": "MASTERMIND SAYI OYUNU",
     "menu.button.easy": "KOLAY (3)",

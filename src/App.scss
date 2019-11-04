@@ -1,4 +1,3 @@
-
 .App {
   text-align: center;
 }
@@ -21,3 +20,7 @@
 .App-link {
   color: #09d3ac;
 }
+
+@import './containers/Game/Game.scss';
+@import './components/MenuButton/MenuButton.scss';
+@import './components/PlayGame/PlayGame.scss';
