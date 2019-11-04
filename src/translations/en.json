@@ -3,7 +3,7 @@
     "404.go-to-menu": "Back to home page",
     "game.back": "Back to home page",
     "game.play-again": "Play again",
-    "game.explanation": "DIFFICULTY: {digit} Digit. Please enter a {digit} digit number",
+    "game.explanation": "DIFFICULTY: {digit} Digit. Please enter a {digit} digit number with unique digits.",
     "game.guess": "Your Guess",
     "game.correct": "Correct Position",
     "game.false": "False Position",

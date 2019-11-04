@@ -3,7 +3,7 @@
     "404.go-to-menu": "Anasayfaya Dön",
     "game.back": "Anasayfaya Dön",
     "game.play-again": "Tekrar Oyna",
-    "game.explanation": "ZORLUK: {digit} rakam. Lütfen {digit} rakamlı sayı giriniz",
+    "game.explanation": "ZORLUK: {digit} rakam. Lütfen rakamları farklı {digit} rakamlı bir sayı giriniz",
     "game.guess": "Tahminin",
     "game.correct": "Doğru Pozisyon",
     "game.false": "Yanlış Pozisyon",
