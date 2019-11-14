@@ -1,3 +1,5 @@
+ #https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/node.js-with-react.yml
+
 trigger:
 - master
 
@@ -7,7 +9,7 @@ pool:
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '10.x'
+    versionSpec: '10.13.0'
   displayName: 'Install Node.js'
 
 - script: |
