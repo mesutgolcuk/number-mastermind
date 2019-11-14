@@ -65,7 +65,3 @@ stages:
               packageForLinux: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
               RuntimeStack: 'NODE|10.16.3'
               StartupCommand: 'yarn run start'
-              ScriptType: 'Inline Script'
-              InlineScript: |
-                sudo yarn install
-                sudo yarn run build --if-present 
