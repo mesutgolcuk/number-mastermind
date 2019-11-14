@@ -67,5 +67,5 @@ stages:
               StartupCommand: 'yarn run start'
               ScriptType: 'Inline Script'
               InlineScript: |
-                yarn install
-                yarn run build --if-present 
+                sudo yarn install
+                sudo yarn run build --if-present 
