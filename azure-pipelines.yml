@@ -67,5 +67,5 @@ stages:
               StartupCommand: 'npm run start'
               ScriptType: 'Inline Script'
               InlineScript: |
-                npm install
+                sudo npm install
                 npm run build --if-present
