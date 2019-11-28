@@ -1,67 +1,27 @@
-# Node.js React Web App to Linux on Azure
-# Build a Node.js React app and deploy it to Azure as a Linux web app.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+resources:
+- repo: self
+  fetchDepth: 1
 
-trigger:
-- master
+pool:
+  vmImage: 'Ubuntu 16.04'
 
-variables:
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '10.x'
+  displayName: 'Install Node.js'
 
-  # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: 'bebf2a40-1d16-43d9-8a40-27c3805bffc4'
+- script: |
+    npm install
+    npm run build
+  displayName: 'npm install and build'
 
-  # Web app name
-  webAppName: 'number-mastermind'
+- script: |
+    zip -r result.zip . -x .git/**\* > /dev/null
+  displayName: 'package results'
 
-  # Environment name
-  environmentName: 'number-mastermind'
-
-  # Agent VM image name
-  vmImageName: 'ubuntu-latest'
-
-stages:
-- stage: Build
-  displayName: Build stage
-  jobs:  
-  - job: Build
-    displayName: Build
-    pool:
-      vmImage: $(vmImageName)
-
-    steps:
-    - task: ArchiveFiles@2
-      displayName: 'Archive files'
-      inputs:
-        rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
-        includeRootFolder: false
-        archiveType: zip
-        archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
-        replaceExistingArchive: true
-
-    - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
-      artifact: drop
-
-- stage: Deploy
-  displayName: Deploy stage
-  dependsOn: Build
-  condition: succeeded()
-  jobs:
-  - deployment: Deploy
-    displayName: Deploy
-    environment: $(environmentName)
-    pool: 
-      vmImage: $(vmImageName)
-    strategy:
-      runOnce:
-        deploy:
-          steps:            
-          - task: AzureRmWebAppDeployment@4
-            displayName: 'Azure App Service Deploy: number-mastermind'
-            inputs:
-              azureSubscription: $(azureSubscription)
-              appType: webAppLinux
-              WebAppName: $(webAppName)
-              packageForLinux: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
-              RuntimeStack: 'NODE|10.16.3'
-              StartupCommand: 'yarn run start'
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathtoPublish: '$(Build.SourcesDirectory)/result.zip' 
+    artifactName: 'drop' 
+  displayName: 'upload artifacts'
