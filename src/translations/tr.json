@@ -15,5 +15,6 @@
     "general.game": "MASTERMIND SAYI OYUNU",
     "menu.button.easy": "KOLAY (3)",
     "menu.button.medium": "ORTA (4)",
-    "menu.button.hard": "ZOR (6)"
+    "menu.button.hard": "ZOR (6)",
+    "menu.history": "SKORLARIM"
 }

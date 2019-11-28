@@ -27,6 +27,7 @@ export class Menu extends React.Component<IMenuProps> {
         <MenuButton textId="menu.button.easy" clicked={this.start} value={DifficultyTypes.EASY} to="/game"/>
         <MenuButton textId="menu.button.medium" clicked={this.start} value={DifficultyTypes.MEDIUM} to="/game"/>
         <MenuButton textId="menu.button.hard" clicked={this.start} value={DifficultyTypes.HARD} to="/game"/>
+        <MenuButton textId="menu.history" to="/history"/>
       </div>
     );
   }
@@ -34,6 +35,7 @@ export class Menu extends React.Component<IMenuProps> {
   start(difficulty: number) {
     this.props.setDifficulty(difficulty);
   }
+
 }
 
 const mapDispatchToProps = (dispatch: any) => {
