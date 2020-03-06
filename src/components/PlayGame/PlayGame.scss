@@ -1,5 +1,8 @@
 .game-input {
     width: 10%;
+    @media (max-width: 768px) {
+        width: 30%;
+    }
     height: 25px;
 }
 
