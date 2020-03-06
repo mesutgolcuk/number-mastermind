@@ -1,9 +1,34 @@
-My first react application. 
+Number Mastermind Game
+
+Rules:
+1. Choose difficulty and computer will generate a number that every digit of it is different
+2. In this enjoyable and exploring adventure your mission is to guess this number.
+3. While you guess blindly caesar logo will guide you.
+4. With every guess you will get a score which indicates how many of digits are related to generated number.
+
+Good luck and enjoy.
 
 # Start 
 ```bash
 yarn start
 ```
 
+# Prod Build
+```bash
+yarn run build
+node server.js
+```
+
 # Play
-[https://number-mastermind.azurewebsites.net/](https://number-mastermind.azurewebsites.net/)
+[https://number-mastermind.netlify.com/](https://number-mastermind.netlify.com/)
+
+## Menu
+![menu](./img/menu.png)
+
+## Guess 
+
+![guess](./img/guess.png)
+
+## Won
+
+![won](./img/found.png)
