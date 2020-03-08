@@ -13,7 +13,7 @@ export default function (props: IPlayGameProps) {
     return (
         <div>
             <form onSubmit={props.submit}>
-                <input type="text" value={props.value} onChange={props.changed} className="game-input" />
+                <input type="tel" value={props.value} onChange={props.changed} className="game-input" />
                 <button type="submit" className="submit-button">
                     <FormattedMessage id="game.submit" />
                 </button>
