@@ -2,7 +2,7 @@ Number Mastermind Game
 
 Rules:
 1. Choose difficulty and computer will generate a number that every digit of it is different
-2. In this enjoyable and exploring adventure your mission is to guess this number.
+2. In this enjoyable and exploring adventure your mission is to guess the number.
 3. While you guess blindly caesar logo will guide you.
 4. With every guess you will know how many of your digit is correctly placed or misplaced
 

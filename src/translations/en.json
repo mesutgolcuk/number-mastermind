@@ -16,7 +16,7 @@
     "game.reset": "Reset",
     "general.error": "ERROR",
     "general.game": "NUMBER MASTERMIND GAME",
-    "how-to-play.message1": "In this enjoyable and exploring adventure your mission is to guess this number.",
+    "how-to-play.message1": "In this enjoyable and exploring adventure your mission is to guess the number.",
     "how-to-play.message2": "While you guess blindly Caesar will guide you to wisdom.",
     "how-to-play.message3": "With every guess you will know how many of your digit is correctly placed or misplaced",
     "menu.button.easy": "EASY (3)",
