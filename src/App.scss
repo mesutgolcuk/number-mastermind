@@ -21,6 +21,10 @@
   color: #09d3ac;
 }
 
+.header-logo {
+  padding-top: 10px;
+}
+
 @import './containers/Game/Game.scss';
 @import './components/MenuButton/MenuButton.scss';
 @import './components/PlayGame/PlayGame.scss';
