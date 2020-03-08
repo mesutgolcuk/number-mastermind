@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { connect } from 'react-redux';
-import { FormattedMessage } from 'react-intl';
 
 import { generateNumberArray } from '../../helpers/number-helpers';
 import TableHeader from '../../components/TableHeader/TableHeader';
@@ -11,7 +10,7 @@ import PlayGame from '../../components/PlayGame/PlayGame';
 import IHistory from './IHistory';
 import TableBody from '../../components/TableBody/TableBody';
 import Header from '../../components/Header/Header';
-import HowToPlay from '../../components/HowToPlay/HowToPlay';
+import { GameExplanation } from '../../components/GameExplanation/GameExplanation';
 
 interface IGameState {
     history: IHistory[],
@@ -40,8 +39,7 @@ export class Game extends React.Component<IGameProps, IGameState> {
         return (
             <div className="game">
                 <Header/>
-                <HowToPlay/>
-                <h4><FormattedMessage id="game.explanation" values={{digit: this.props.difficulty}}/></h4>
+                <GameExplanation difficulty={this.props.difficulty}/>
                 {this.isFound ? (<Success reset={this.resetGame} />) : (
                     <PlayGame value={this.state.inputValue} changed={this.updateNumber} submit={this.submit} reset={this.resetGame}/>
                 )}
