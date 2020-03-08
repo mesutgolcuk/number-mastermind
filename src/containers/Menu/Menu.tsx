@@ -28,7 +28,7 @@ export class Menu extends React.Component<IMenuProps> {
         <MenuButton textId="menu.button.medium" clicked={this.start} value={DifficultyTypes.MEDIUM} to="/game"/>
         <MenuButton textId="menu.button.hard" clicked={this.start} value={DifficultyTypes.HARD} to="/game"/>
         <MenuButton textId="menu.history" to="/history"/>
-        MIT License Copyright (c) 2019 Mesut GÖLCÜK. <a href="https://github.com/mesutgolcuk/number-mastermind" target="_blank">Source Code</a> 
+        MIT License Copyright (c) 2019 Mesut GÖLCÜK. <a href="https://github.com/mesutgolcuk/number-mastermind" target="_blank" rel="noopener noreferrer">Source Code</a> 
       </div>
     );
   }
