@@ -1,4 +1,4 @@
-Number Mastermind Game
+# Number Mastermind Game
 
 Rules:
 1. Choose difficulty and computer will generate a number that every digit of it is different
@@ -8,27 +8,27 @@ Rules:
 
 Good luck and enjoy.
 
-# Start 
+## Start 
 ```bash
 yarn start
 ```
 
-# Prod Build
+## Prod Build
 ```bash
 yarn run build
 node server.js
 ```
 
-# Play
+## Play
 [https://number-mastermind.netlify.com/](https://number-mastermind.netlify.com/)
 
-## Menu
+### Menu
 ![menu](./img/menu.png)
 
-## Guess 
+### Guess 
 
 ![guess](./img/guess.png)
 
-## Won
+### Won
 
 ![won](./img/found.png)
