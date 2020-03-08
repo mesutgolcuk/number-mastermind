@@ -1,7 +1,10 @@
-.game-table {
-    border: 1px solid black;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%; 
-    margin-top: 20px;
+.game {
+    .header-logo {
+        padding-top: 10px;
+    }
+    .game-table {
+        border: 1px solid black;
+        width: 70%;
+        margin: 20px 15% 20% 15%;
+    }
 }

@@ -11,6 +11,7 @@ import PlayGame from '../../components/PlayGame/PlayGame';
 import IHistory from './IHistory';
 import TableBody from '../../components/TableBody/TableBody';
 import Header from '../../components/Header/Header';
+import HowToPlay from '../../components/HowToPlay/HowToPlay';
 
 interface IGameState {
     history: IHistory[],
@@ -37,8 +38,9 @@ export class Game extends React.Component<IGameProps, IGameState> {
 
     render() {
         return (
-            <div>
+            <div className="game">
                 <Header/>
+                <HowToPlay/>
                 <h4><FormattedMessage id="game.explanation" values={{digit: this.props.difficulty}}/></h4>
                 {this.isFound ? (<Success reset={this.resetGame} />) : (
                     <PlayGame value={this.state.inputValue} changed={this.updateNumber} submit={this.submit} reset={this.resetGame}/>
