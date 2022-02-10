@@ -14,7 +14,7 @@
     "helmet": "^3.21.2",
     "immutable": "^4.0.0-rc.12",
     "morgan": "^1.9.1",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-intl": "^3.4.0",
